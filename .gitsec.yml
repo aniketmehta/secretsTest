@@ -1,0 +1,11 @@
+plugins:
+    bbvalabsci/gitsec-git-secrets:
+        options:
+            prohibited:
+                password:
+                    value: '^password:'
+                    type: regex
+    bbvalabsci/gitsec-api-key-detect:
+        unimportant: yes
+    bbvalabsci/gitsec-trufflehog:
+    bbvalabsci/gitsec-gittyleaks:
